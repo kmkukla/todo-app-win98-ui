@@ -20,22 +20,25 @@
           <button aria-label="Close"></button>
         </div>
       </div>
-      <div class="window-body">
-        <fieldset>
-          <div class="field-row input">
-            <label>Enter item</label>
-            <input type="text" id="input">
-          </div>
-        </fieldset>
-        <section class="field-row buttons">
-          <button id="add-btn">ADD</button>
-          <button id="cancel-btn">Cancel</button>
-        </section>
-      </div>
+      <form>
+        <div class="window-body">
+          <fieldset>
+            <div class="field-row input">
+              <label>Enter item</label>
+              <input type="text" id="input" autocomplete="off">
+            </div>
+          </fieldset>
+          <section class="field-row buttons">
+            <button id="add-btn" type="submit">ADD</button>
+            <button id="cancel-btn">Cancel</button>
+          </section>
+        </div>
+      </form>
     </div>
     <ul class="tree-view">
     </ul>
     <div class="field-row buttons">
+      <button id="edit-btn">Edit</button>
       <button id="delete-btn">Delete</button>
       <button id="delete-all-btn">Delete all items</button>
     </div>

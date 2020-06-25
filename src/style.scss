@@ -6,6 +6,9 @@
 
 body {
   background-color: #000;
+  min-height: 90vh;
+  display: grid;
+  align-items: center;
 }
 
 .bg {
@@ -22,7 +25,11 @@ body {
 }
 
 .window.main {
+  min-height: 60vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
   padding: 5px;
+  overflow: hidden;
 }
 
 .field-row.buttons {
@@ -32,13 +39,14 @@ body {
 
 ul.tree-view {
   margin-top: 10px;
-  padding: 0 0 50px 0;
+  padding: 0;
 }
 
 li {
   line-height: normal;
   margin: 0;
   padding: 3px 6px;
+
   &.selected {
     background-color: navy;
     color: white;
@@ -65,10 +73,10 @@ p {
     min-height: 100vh;
     position: relative;
     margin: 0 auto;
-    display: grid;
     place-items: center;
     width: 1024px;
   }
+
   .bg {
     background-size: contain;
   }
