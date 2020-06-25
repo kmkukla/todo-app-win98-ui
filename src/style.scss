@@ -1,0 +1,75 @@
+@import "../node_modules/98.css/dist/98.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  min-height: 100vh;
+  background-image: url("./images/Windows98-desktop.png");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: cover;
+}
+
+.window.main {
+  padding: 5px;
+}
+
+.field-row.buttons {
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+
+ul.tree-view {
+  margin-top: 10px;
+  padding: 0 0 50px 0;
+}
+
+li {
+  line-height: normal;
+  margin: 0;
+  padding: 3px 6px;
+  &.selected {
+    background-color: navy;
+    color: white;
+  }
+}
+
+p {
+  margin-left: 10px;
+}
+
+.field-row.clear-all {
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+@media (min-width: 550px) {
+  .window.main {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    min-height: 100vh;
+    position: relative;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    width: 1024px;
+  }
+  .bg {
+    background-size: contain;
+  }
+}
